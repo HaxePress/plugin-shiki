@@ -1,0 +1,90 @@
+{
+  "apiVersion": 4,
+  "cmsVersion": "2.16.0",
+  "kind": "plugin",
+  "pluginId": "345e72f6-57bd-49ce-9bc9-cb140931ab48",
+  "slug": "shiki",
+  "name": "Shiki Code Highlighting",
+  "version": "0.1.0",
+  "description": "Highlights fenced code blocks on public pages with Shiki, with a light and a dark theme.",
+  "author": "HaxePress",
+  "assets": {
+    "module": "shiki.js",
+    "stylesheet": "shiki.css"
+  },
+  "fields": [
+    {
+      "key": "light_theme",
+      "label": "Light theme",
+      "kind": "select",
+      "defaultValue": "github-light",
+      "help": "Colors code blocks when the page is shown in light mode.",
+      "options": [
+        { "value": "github-light", "label": "GitHub Light" },
+        { "value": "github-light-default", "label": "GitHub Light Default" },
+        { "value": "github-light-high-contrast", "label": "GitHub Light High Contrast" },
+        { "value": "light-plus", "label": "Light Plus" },
+        { "value": "one-light", "label": "One Light" },
+        { "value": "min-light", "label": "Min Light" },
+        { "value": "vitesse-light", "label": "Vitesse Light" },
+        { "value": "catppuccin-latte", "label": "Catppuccin Latte" },
+        { "value": "rose-pine-dawn", "label": "Rosé Pine Dawn" },
+        { "value": "solarized-light", "label": "Solarized Light" },
+        { "value": "everforest-light", "label": "Everforest Light" },
+        { "value": "gruvbox-light-medium", "label": "Gruvbox Light Medium" },
+        { "value": "kanagawa-lotus", "label": "Kanagawa Lotus" },
+        { "value": "material-theme-lighter", "label": "Material Theme Lighter" },
+        { "value": "night-owl-light", "label": "Night Owl Light" },
+        { "value": "ayu-light", "label": "Ayu Light" },
+        { "value": "slack-ochin", "label": "Slack Ochin" },
+        { "value": "snazzy-light", "label": "Snazzy Light" },
+        { "value": "horizon-bright", "label": "Horizon Bright" }
+      ]
+    },
+    {
+      "key": "dark_theme",
+      "label": "Dark theme",
+      "kind": "select",
+      "defaultValue": "github-dark",
+      "help": "Colors code blocks when the page is shown in dark mode.",
+      "options": [
+        { "value": "github-dark", "label": "GitHub Dark" },
+        { "value": "github-dark-default", "label": "GitHub Dark Default" },
+        { "value": "github-dark-dimmed", "label": "GitHub Dark Dimmed" },
+        { "value": "github-dark-high-contrast", "label": "GitHub Dark High Contrast" },
+        { "value": "dark-plus", "label": "Dark Plus" },
+        { "value": "one-dark-pro", "label": "One Dark Pro" },
+        { "value": "vitesse-dark", "label": "Vitesse Dark" },
+        { "value": "catppuccin-mocha", "label": "Catppuccin Mocha" },
+        { "value": "catppuccin-macchiato", "label": "Catppuccin Macchiato" },
+        { "value": "dracula", "label": "Dracula" },
+        { "value": "nord", "label": "Nord" },
+        { "value": "tokyo-night", "label": "Tokyo Night" },
+        { "value": "night-owl", "label": "Night Owl" },
+        { "value": "monokai", "label": "Monokai" },
+        { "value": "rose-pine", "label": "Rosé Pine" },
+        { "value": "rose-pine-moon", "label": "Rosé Pine Moon" },
+        { "value": "solarized-dark", "label": "Solarized Dark" },
+        { "value": "everforest-dark", "label": "Everforest Dark" },
+        { "value": "gruvbox-dark-medium", "label": "Gruvbox Dark Medium" },
+        { "value": "kanagawa-wave", "label": "Kanagawa Wave" }
+      ]
+    },
+    {
+      "key": "color_scheme",
+      "label": "Color mode",
+      "kind": "select",
+      "defaultValue": "system",
+      "help": "Following the device uses the dark theme when the visitor's device is set to dark mode.",
+      "options": [
+        { "value": "system", "label": "Follow the visitor's device" },
+        { "value": "light", "label": "Always use the light theme" },
+        { "value": "dark", "label": "Always use the dark theme" }
+      ]
+    }
+  ],
+  "translations": {
+    "en": "lang/en.json",
+    "tr": "lang/tr.json"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Always use the dark theme": "Her zaman koyu temayı kullan",
+  "Always use the light theme": "Her zaman açık temayı kullan",
+  "Color mode": "Renk modu",
+  "Colors code blocks when the page is shown in dark mode.": "Sayfa koyu modda gösterilirken kod bloklarını renklendirir.",
+  "Colors code blocks when the page is shown in light mode.": "Sayfa açık modda gösterilirken kod bloklarını renklendirir.",
+  "Dark theme": "Koyu tema",
+  "Follow the visitor's device": "Ziyaretçinin cihazına uy",
+  "Following the device uses the dark theme when the visitor's device is set to dark mode.": "Cihaza uyulduğunda, ziyaretçinin cihazı koyu moddaysa koyu tema kullanılır.",
+  "Highlights fenced code blocks on public pages with Shiki, with a light and a dark theme.": "Sitedeki kod bloklarını Shiki ile açık ve koyu bir temayla renklendirir.",
+  "Light theme": "Açık tema",
+  "Shiki Code Highlighting": "Shiki Kod Renklendirme"
+}

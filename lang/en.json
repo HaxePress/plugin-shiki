@@ -1,0 +1,13 @@
+{
+  "Always use the dark theme": "Always use the dark theme",
+  "Always use the light theme": "Always use the light theme",
+  "Color mode": "Color mode",
+  "Colors code blocks when the page is shown in dark mode.": "Colors code blocks when the page is shown in dark mode.",
+  "Colors code blocks when the page is shown in light mode.": "Colors code blocks when the page is shown in light mode.",
+  "Dark theme": "Dark theme",
+  "Follow the visitor's device": "Follow the visitor's device",
+  "Following the device uses the dark theme when the visitor's device is set to dark mode.": "Following the device uses the dark theme when the visitor's device is set to dark mode.",
+  "Highlights fenced code blocks on public pages with Shiki, with a light and a dark theme.": "Highlights fenced code blocks on public pages with Shiki, with a light and a dark theme.",
+  "Light theme": "Light theme",
+  "Shiki Code Highlighting": "Shiki Code Highlighting"
+}

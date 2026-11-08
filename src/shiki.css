@@ -1,0 +1,51 @@
+/*
+ * Code blocks highlighted by the Shiki plugin. Shiki writes each theme's colors
+ * as CSS variables on the block (`--shiki-light-bg`, `--shiki-dark-bg`) and on
+ * its tokens (`--shiki-light`, `--shiki-dark` and their font styles); the color
+ * mode chooses which set applies. `system` follows the visitor's device.
+ */
+
+pre.shiki[data-shiki-scheme] {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+  /* A faint edge in the theme's text color keeps a block visible when its background matches the page. */
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor 14%, transparent);
+}
+
+pre.shiki[data-shiki-scheme] code {
+  color: inherit;
+  background: transparent;
+}
+
+pre.shiki[data-shiki-scheme] span {
+  color: var(--shiki-light);
+  font-style: var(--shiki-light-font-style);
+  font-weight: var(--shiki-light-font-weight);
+  text-decoration: var(--shiki-light-text-decoration);
+}
+
+pre.shiki[data-shiki-scheme='dark'] {
+  color: var(--shiki-dark);
+  background-color: var(--shiki-dark-bg);
+}
+
+pre.shiki[data-shiki-scheme='dark'] span {
+  color: var(--shiki-dark);
+  font-style: var(--shiki-dark-font-style);
+  font-weight: var(--shiki-dark-font-weight);
+  text-decoration: var(--shiki-dark-text-decoration);
+}
+
+@media (prefers-color-scheme: dark) {
+  pre.shiki[data-shiki-scheme='system'] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  pre.shiki[data-shiki-scheme='system'] span {
+    color: var(--shiki-dark);
+    font-style: var(--shiki-dark-font-style);
+    font-weight: var(--shiki-dark-font-weight);
+    text-decoration: var(--shiki-dark-text-decoration);
+  }
+}
